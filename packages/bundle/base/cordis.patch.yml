@@ -449,3 +449,11 @@
     # choice.
     - id: llm-deepseek
       name: '@deepseek-ai/dsh-llm-deepseek'
+
+    # The FriendliAI serverless adapter, mounted dormant beside the pi-ai twin:
+    # the `friendli` route registers with its default serverless catalog, and a
+    # request selects it with `provider: friendli`, resolving FRIENDLI_API_KEY
+    # per request from the `llm-friendli:` settings section (the Models page
+    # writes it) over this entry. No key or endpoint is inlined.
+    - id: llm-friendli
+      name: '@deepseek-ai/dsh-llm-friendli'
